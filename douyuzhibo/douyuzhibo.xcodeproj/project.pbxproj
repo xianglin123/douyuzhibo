@@ -17,6 +17,7 @@
 		F0010AAE1DA3D41D00DF6463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AAC1DA3D41D00DF6463 /* LaunchScreen.storyboard */; };
 		F0010AB91DA3D41D00DF6463 /* douyuzhiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AB81DA3D41D00DF6463 /* douyuzhiboTests.swift */; };
 		F0010AC41DA3D41D00DF6463 /* douyuzhiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AC31DA3D41D00DF6463 /* douyuzhiboUITests.swift */; };
+		F0010AE91DA3DC0100DF6463 /* XLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AE81DA3DC0100DF6463 /* XLTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F0010ABF1DA3D41D00DF6463 /* douyuzhiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = douyuzhiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0010AC31DA3D41D00DF6463 /* douyuzhiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyuzhiboUITests.swift; sourceTree = "<group>"; };
 		F0010AC51DA3D41D00DF6463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0010AE81DA3DC0100DF6463 /* XLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLTabBarController.swift; sourceTree = "<group>"; };
 		F426821A80820030ECD8A089 /* Pods-douyuzhiboUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboUITests/Pods-douyuzhiboUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F8905C3FF75F0911D09535AF /* Pods-douyuzhiboTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboTests/Pods-douyuzhiboTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +193,7 @@
 		F0010AD31DA3D5FC00DF6463 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0010AE81DA3DC0100DF6463 /* XLTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 			files = (
 				F0010AA61DA3D41D00DF6463 /* ViewController.swift in Sources */,
 				F0010AA41DA3D41D00DF6463 /* AppDelegate.swift in Sources */,
+				F0010AE91DA3DC0100DF6463 /* XLTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
