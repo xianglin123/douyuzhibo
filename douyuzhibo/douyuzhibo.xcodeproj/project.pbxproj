@@ -18,6 +18,14 @@
 		F0010AB91DA3D41D00DF6463 /* douyuzhiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AB81DA3D41D00DF6463 /* douyuzhiboTests.swift */; };
 		F0010AC41DA3D41D00DF6463 /* douyuzhiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AC31DA3D41D00DF6463 /* douyuzhiboUITests.swift */; };
 		F0010AE91DA3DC0100DF6463 /* XLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AE81DA3DC0100DF6463 /* XLTabBarController.swift */; };
+		F0010AEC1DA3DEC500DF6463 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AEA1DA3DEC500DF6463 /* Home.storyboard */; };
+		F0010AEE1DA3DEDC00DF6463 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AED1DA3DEDC00DF6463 /* Live.storyboard */; };
+		F0010AF01DA3DFF400DF6463 /* Focus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AEF1DA3DFF400DF6463 /* Focus.storyboard */; };
+		F0010AF31DA3E00400DF6463 /* Myself.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AF11DA3E00400DF6463 /* Myself.storyboard */; };
+		F0010AF51DA3E58B00DF6463 /* XLHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AF41DA3E58B00DF6463 /* XLHomeViewController.swift */; };
+		F0010AF81DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AF71DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift */; };
+		F0010AFA1DA3FC4200DF6463 /* XLChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AF91DA3FC4200DF6463 /* XLChannelView.swift */; };
+		F0010AFC1DA407D100DF6463 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AFB1DA407D100DF6463 /* common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,14 @@
 		F0010AC31DA3D41D00DF6463 /* douyuzhiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyuzhiboUITests.swift; sourceTree = "<group>"; };
 		F0010AC51DA3D41D00DF6463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0010AE81DA3DC0100DF6463 /* XLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLTabBarController.swift; sourceTree = "<group>"; };
+		F0010AEB1DA3DEC500DF6463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyuzhibo/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		F0010AED1DA3DEDC00DF6463 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../../Common/Controllers/Live.storyboard; sourceTree = "<group>"; };
+		F0010AEF1DA3DFF400DF6463 /* Focus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Focus.storyboard; path = ../../Common/Controllers/Focus.storyboard; sourceTree = "<group>"; };
+		F0010AF21DA3E00400DF6463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyuzhibo/Base.lproj/Myself.storyboard; sourceTree = SOURCE_ROOT; };
+		F0010AF41DA3E58B00DF6463 /* XLHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLHomeViewController.swift; sourceTree = "<group>"; };
+		F0010AF71DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Ext.swift"; sourceTree = "<group>"; };
+		F0010AF91DA3FC4200DF6463 /* XLChannelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLChannelView.swift; sourceTree = "<group>"; };
+		F0010AFB1DA407D100DF6463 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		F426821A80820030ECD8A089 /* Pods-douyuzhiboUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboUITests/Pods-douyuzhiboUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F8905C3FF75F0911D09535AF /* Pods-douyuzhiboTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboTests/Pods-douyuzhiboTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,7 +158,6 @@
 				F0010AD11DA3D5FC00DF6463 /* Classes */,
 				F0010AA31DA3D41D00DF6463 /* AppDelegate.swift */,
 				F0010AA51DA3D41D00DF6463 /* ViewController.swift */,
-				F0010AA71DA3D41D00DF6463 /* Main.storyboard */,
 				F0010AAA1DA3D41D00DF6463 /* Assets.xcassets */,
 				F0010AAC1DA3D41D00DF6463 /* LaunchScreen.storyboard */,
 				F0010AAF1DA3D41D00DF6463 /* Info.plist */,
@@ -176,6 +191,7 @@
 				F0010ADE1DA3D5FC00DF6463 /* Live */,
 				F0010AD61DA3D5FC00DF6463 /* Focus */,
 				F0010AE21DA3D5FC00DF6463 /* Myself */,
+				F0010AF61DA3EF3A00DF6463 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -183,9 +199,9 @@
 		F0010AD21DA3D5FC00DF6463 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F0010AD31DA3D5FC00DF6463 /* Controllers */,
 				F0010AD41DA3D5FC00DF6463 /* Models */,
 				F0010AD51DA3D5FC00DF6463 /* Views */,
+				F0010AD31DA3D5FC00DF6463 /* Controllers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -193,6 +209,7 @@
 		F0010AD31DA3D5FC00DF6463 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0010AA71DA3D41D00DF6463 /* Main.storyboard */,
 				F0010AE81DA3DC0100DF6463 /* XLTabBarController.swift */,
 			);
 			path = Controllers;
@@ -208,6 +225,7 @@
 		F0010AD51DA3D5FC00DF6463 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F0010AF91DA3FC4200DF6463 /* XLChannelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +243,7 @@
 		F0010AD71DA3D5FC00DF6463 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0010AEF1DA3DFF400DF6463 /* Focus.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +275,8 @@
 		F0010ADB1DA3D5FC00DF6463 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0010AEA1DA3DEC500DF6463 /* Home.storyboard */,
+				F0010AF41DA3E58B00DF6463 /* XLHomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -287,6 +308,7 @@
 		F0010ADF1DA3D5FC00DF6463 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0010AED1DA3DEDC00DF6463 /* Live.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -318,6 +340,7 @@
 		F0010AE31DA3D5FC00DF6463 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F0010AF11DA3E00400DF6463 /* Myself.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -334,6 +357,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F0010AF61DA3EF3A00DF6463 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F0010AF71DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift */,
+				F0010AFB1DA407D100DF6463 /* common.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +438,7 @@
 		F0010A981DA3D41D00DF6463 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XL;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = xianglin;
@@ -451,6 +484,10 @@
 				F0010AAE1DA3D41D00DF6463 /* LaunchScreen.storyboard in Resources */,
 				F0010AAB1DA3D41D00DF6463 /* Assets.xcassets in Resources */,
 				F0010AA91DA3D41D00DF6463 /* Main.storyboard in Resources */,
+				F0010AF01DA3DFF400DF6463 /* Focus.storyboard in Resources */,
+				F0010AF31DA3E00400DF6463 /* Myself.storyboard in Resources */,
+				F0010AEE1DA3DEDC00DF6463 /* Live.storyboard in Resources */,
+				F0010AEC1DA3DEC500DF6463 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,8 +635,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0010AFC1DA407D100DF6463 /* common.swift in Sources */,
 				F0010AA61DA3D41D00DF6463 /* ViewController.swift in Sources */,
+				F0010AF51DA3E58B00DF6463 /* XLHomeViewController.swift in Sources */,
 				F0010AA41DA3D41D00DF6463 /* AppDelegate.swift in Sources */,
+				F0010AF81DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift in Sources */,
+				F0010AFA1DA3FC4200DF6463 /* XLChannelView.swift in Sources */,
 				F0010AE91DA3DC0100DF6463 /* XLTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,6 +683,7 @@
 				F0010AA81DA3D41D00DF6463 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		F0010AAC1DA3D41D00DF6463 /* LaunchScreen.storyboard */ = {
@@ -650,6 +692,24 @@
 				F0010AAD1DA3D41D00DF6463 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F0010AEA1DA3DEC500DF6463 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0010AEB1DA3DEC500DF6463 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../../Common/Controllers;
+			sourceTree = "<group>";
+		};
+		F0010AF11DA3E00400DF6463 /* Myself.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0010AF21DA3E00400DF6463 /* Base */,
+			);
+			name = Myself.storyboard;
+			path = ../../Common/Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -743,6 +803,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = douyuzhibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xianglin.douyuzhibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -756,6 +817,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = douyuzhibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xianglin.douyuzhibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
