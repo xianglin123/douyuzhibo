@@ -26,6 +26,8 @@
 		F0010AF81DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AF71DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift */; };
 		F0010AFA1DA3FC4200DF6463 /* XLChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AF91DA3FC4200DF6463 /* XLChannelView.swift */; };
 		F0010AFC1DA407D100DF6463 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AFB1DA407D100DF6463 /* common.swift */; };
+		F08770FF1DA4C99300D0139E /* XLContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08770FE1DA4C99300D0139E /* XLContentView.swift */; };
+		F08771011DA4D32100D0139E /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08771001DA4D32100D0139E /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		F0010AF71DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Ext.swift"; sourceTree = "<group>"; };
 		F0010AF91DA3FC4200DF6463 /* XLChannelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLChannelView.swift; sourceTree = "<group>"; };
 		F0010AFB1DA407D100DF6463 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		F08770FE1DA4C99300D0139E /* XLContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLContentView.swift; sourceTree = "<group>"; };
+		F08771001DA4D32100D0139E /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		F426821A80820030ECD8A089 /* Pods-douyuzhiboUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboUITests/Pods-douyuzhiboUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F8905C3FF75F0911D09535AF /* Pods-douyuzhiboTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboTests/Pods-douyuzhiboTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				F0010AF91DA3FC4200DF6463 /* XLChannelView.swift */,
+				F08770FE1DA4C99300D0139E /* XLContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 			children = (
 				F0010AF71DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift */,
 				F0010AFB1DA407D100DF6463 /* common.swift */,
+				F08771001DA4D32100D0139E /* UIColor+Ext.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -635,11 +641,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08770FF1DA4C99300D0139E /* XLContentView.swift in Sources */,
 				F0010AFC1DA407D100DF6463 /* common.swift in Sources */,
 				F0010AA61DA3D41D00DF6463 /* ViewController.swift in Sources */,
 				F0010AF51DA3E58B00DF6463 /* XLHomeViewController.swift in Sources */,
 				F0010AA41DA3D41D00DF6463 /* AppDelegate.swift in Sources */,
 				F0010AF81DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift in Sources */,
+				F08771011DA4D32100D0139E /* UIColor+Ext.swift in Sources */,
 				F0010AFA1DA3FC4200DF6463 /* XLChannelView.swift in Sources */,
 				F0010AE91DA3DC0100DF6463 /* XLTabBarController.swift in Sources */,
 			);
