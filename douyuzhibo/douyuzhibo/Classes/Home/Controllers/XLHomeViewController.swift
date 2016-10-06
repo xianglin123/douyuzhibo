@@ -84,7 +84,7 @@ class XLHomeViewController: UIViewController {
 extension XLHomeViewController : XLChannelViewDelegate{
     func channelView(titleView: XLChannelView, selectedIndex: Int) {
         //切换contentView
-        contentView.setCurrentIndex(selectedIndex)
+        contentView.setContentViewWithIndex(selectedIndex)
     }
 }
 

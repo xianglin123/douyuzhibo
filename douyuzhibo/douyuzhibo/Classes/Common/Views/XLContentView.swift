@@ -76,11 +76,17 @@ extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childVcs.count
     }
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         //1.创建cell
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kContentViewCell, forIndexPath: indexPath)
         
-        //2.添加控制器的view到cell
+        // 2.给Cell设置内容
+        for view in cell.contentView.subviews {
+            view.removeFromSuperview()
+        }
+        
+        //3.添加控制器的view到cell
         let childVc = childVcs[indexPath.item]
         childVc.view.frame = cell.contentView.bounds
         cell.contentView.addSubview(childVc.view)
@@ -94,6 +100,8 @@ extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        if isForbidDelegate { return }
         //定义属性
         var sourceIndex : Int = 0
         var targetIndex : Int = 0
@@ -117,8 +125,7 @@ extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
                 scrollProgress = 1
                 targetIndex = sourceIndex
             }
-        }
-        else if startOffsetX > currentOffsetX {//右滑
+        }else {//右滑
             //1.计算当前页的滚动进度
             scrollProgress = 1 - currentOffsetX % scrollViewW / scrollViewW
             //2.计算targetIndex
@@ -137,7 +144,7 @@ extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
 
 // MARK:- 对外暴露的方法
 extension XLContentView {
-    func setCurrentIndex(currentIndex : Int) {
+    func setContentViewWithIndex(currentIndex : Int) {
         
         // 1.是否禁止执行代理方法
         isForbidDelegate = true

@@ -148,6 +148,7 @@ extension XLChannelView {
         
         //7.实现二级联动效果,切换视图,使用代理
         delegate?.channelView(self, selectedIndex: currentIndex)
+        print(currentIndex)
     }
 }
 
@@ -155,5 +156,28 @@ extension XLChannelView {
 extension XLChannelView {
     func setChannelView (progress : CGFloat, sourceIndex : Int, targetIndex : Int) {
         
+        //获取label
+        let sourceLabel = titleLabels[sourceIndex]
+        let targetLabel = titleLabels[targetIndex]
+        
+        //计算单次滑块改变的x值
+        let lineViewChangeX = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
+        let lineViewX = progress * lineViewChangeX
+        
+        //移动滑块
+        lineView.frame.origin.x = lineViewX + sourceLabel.frame.origin.x
+        
+        //字体颜色的渐变
+        //计算变化的范围rgb值
+        let colorDelta = (kSelectColor.0 - kNormalColor.0, kSelectColor.1 - kNormalColor.1, kSelectColor.2 - kNormalColor.2)
+        
+        //改变sourceLabel的颜色
+        sourceLabel.textColor = UIColor(r: kSelectColor.0 - colorDelta.0 * progress, g: kSelectColor.1 - colorDelta.1 * progress, b: kSelectColor.2 - colorDelta.2 * progress)
+        
+        //改变targetLabel的颜色
+        targetLabel.textColor = UIColor(r: kNormalColor.0 + colorDelta.0 * progress, g: kNormalColor.1 + colorDelta.1 * progress, b: kNormalColor.2 + colorDelta.2 * progress)
+        
+        //保存最新的index
+        currentIndex = targetIndex
     }
 }
