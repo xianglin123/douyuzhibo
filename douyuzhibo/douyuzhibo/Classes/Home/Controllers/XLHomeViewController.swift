@@ -14,7 +14,7 @@ class XLHomeViewController: UIViewController {
 
     //MARK: - 懒加载控件
     //1.标题栏
-    private lazy var channelView : XLChannelView = {[weak self]
+    fileprivate lazy var channelView : XLChannelView = {[weak self]
         in
         let frame = CGRect(x: 0, y: kStatusBarH + kNaviBarH, width: kScreenW, height: kChannelH)
         let channels = ["推荐", "游戏", "娱乐", "趣玩"]
@@ -23,7 +23,7 @@ class XLHomeViewController: UIViewController {
         return channelView
     }()
     //2.内容视图
-    private lazy var contentView : XLContentView = {[weak self] in
+    fileprivate lazy var contentView : XLContentView = {[weak self] in
         
         // 1.确定内容的frame
         let contentH = kScreenH - kStatusBarH - kNaviBarH - kChannelH - kTabbarH
@@ -31,7 +31,8 @@ class XLHomeViewController: UIViewController {
         
         // 2.确定所有的子控制器
         var childVcs = [UIViewController]()
-        for _ in 0..<4 {
+        childVcs.append(XLRecommendController())
+        for _ in 1..<4 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
@@ -52,7 +53,7 @@ class XLHomeViewController: UIViewController {
     }
     
     //MARK: - 设置UI
-    private func setupUI() {
+    fileprivate func setupUI() {
         //是否自动调整UIScrollView的内边距
         automaticallyAdjustsScrollViewInsets = false
         
@@ -67,12 +68,12 @@ class XLHomeViewController: UIViewController {
     }
     
     //MARK: - 设置导航栏
-    private func setupNavi() {
+    fileprivate func setupNavi() {
         //1.设置左侧item
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(normalImageName: "logo")
         
         //2.设置右侧items
-        let size = CGSizeMake(40, 40)
+        let size = CGSize(width: 40, height: 40)
         let historyItem = UIBarButtonItem(normalImageName: "image_my_history", highImageName: "Image_my_history_click", size: size)
         let codeItem = UIBarButtonItem(normalImageName: "Image_scan", highImageName: "Image_scan_click", size: size)
         let searchItem = UIBarButtonItem(normalImageName: "btn_search", highImageName: "btn_search_clicked", size: size)
@@ -82,7 +83,7 @@ class XLHomeViewController: UIViewController {
 
 //MARK: - channelView的代理方法
 extension XLHomeViewController : XLChannelViewDelegate{
-    func channelView(titleView: XLChannelView, selectedIndex: Int) {
+    func channelView(_ titleView: XLChannelView, selectedIndex: Int) {
         //切换contentView
         contentView.setContentViewWithIndex(selectedIndex)
     }
@@ -90,7 +91,7 @@ extension XLHomeViewController : XLChannelViewDelegate{
 
 //MARK: - contentView的代理方法
 extension XLHomeViewController : XLContentViewDelegate{
-    func contentView(contentView: XLContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+    func contentView(_ contentView: XLContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         //切换channel
         channelView.setChannelView(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }

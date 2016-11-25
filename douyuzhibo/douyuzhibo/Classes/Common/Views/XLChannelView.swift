@@ -10,7 +10,7 @@ import UIKit
 //MARK: - 定义协议
 protocol XLChannelViewDelegate : class {
 
-    func channelView(titleView : XLChannelView, selectedIndex : Int)
+    func channelView(_ titleView : XLChannelView, selectedIndex : Int)
     
 }
 //MARK: - 定义一些常量
@@ -22,9 +22,9 @@ class XLChannelView: UIView {
 
     //MARK: - 定义属性
     //1.标题数组
-    private var channels: [String]
+    fileprivate var channels: [String]
     //2.当前的label的索引
-    private var currentIndex: Int = 0
+    fileprivate var currentIndex: Int = 0
     //3.代理
     weak var delegate : XLChannelViewDelegate?
     
@@ -40,7 +40,7 @@ class XLChannelView: UIView {
     }
 
     //MARK: - 设置UI
-    private func setupUI() {
+    fileprivate func setupUI() {
         //1.添加scrollView
         addSubview(scrollView)
         scrollView.frame = bounds
@@ -51,21 +51,21 @@ class XLChannelView: UIView {
     }
     
     //MARK: - 创建channel标签
-    private func creatChannelLabel() {
+    fileprivate func creatChannelLabel() {
         
         let labelW : CGFloat = frame.width / CGFloat(channels.count)
         let labelH : CGFloat = frame.height - kLineViewH
         let labelY : CGFloat = 0
         
         //0.根据channels长度创建label
-        for (index , title) in channels.enumerate() {
+        for (index , title) in channels.enumerated() {
             let label = UILabel()
             //1.设置属性
             label.text = title
             label.tag = index
-            label.font = UIFont.systemFontOfSize(16.0)
+            label.font = UIFont.systemFont(ofSize: 16.0)
             label.textColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)
-            label.textAlignment = .Center
+            label.textAlignment = .center
 
             //2.设置frame
             let labelX : CGFloat = labelW * CGFloat(index)
@@ -76,17 +76,17 @@ class XLChannelView: UIView {
             titleLabels.append(label)
             
             //4.给Label添加手势
-            label.userInteractionEnabled = true
+            label.isUserInteractionEnabled = true
             let tap = UITapGestureRecognizer(target: self, action: #selector(self.channelLabelClick(_:)))
             label.addGestureRecognizer(tap)
         }
     }
     
     //MARK: - 创建底部line/滑块
-    private func creatBottomView() {
+    fileprivate func creatBottomView() {
         //1.创建line
         let bottomLine = UIView()
-        bottomLine.backgroundColor = UIColor.lightGrayColor()
+        bottomLine.backgroundColor = UIColor.lightGray
         let lineH : CGFloat = 0.5
         bottomLine.frame = CGRect(x: 0, y: frame.height - lineH, width: frame.width, height: lineH)
         addSubview(bottomLine)
@@ -103,7 +103,7 @@ class XLChannelView: UIView {
     
     //MARK: - 懒加载控件
     //1.scrollView滚动标题
-    private lazy var scrollView : UIScrollView = {
+    fileprivate lazy var scrollView : UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.scrollsToTop = false
         scrollView.showsHorizontalScrollIndicator = false
@@ -111,18 +111,18 @@ class XLChannelView: UIView {
         return scrollView
     }()
     //2.标题名称标签
-    private lazy var titleLabels : [UILabel] = [UILabel]()
+    fileprivate lazy var titleLabels : [UILabel] = [UILabel]()
     //3.标题底部横线
-    private lazy var lineView : UIView = {
+    fileprivate lazy var lineView : UIView = {
         let lineView = UIView()
-        lineView.backgroundColor = UIColor.orangeColor()
+        lineView.backgroundColor = UIColor.orange
         return lineView
     }()
 }
 
 //MARK: - 标签手势点击方法
 extension XLChannelView {
-    @objc private func channelLabelClick(tap : UITapGestureRecognizer) {
+    @objc fileprivate func channelLabelClick(_ tap : UITapGestureRecognizer) {
 //        print("点击标题")
         //1.拿到点击的label(tag值)
         guard let currentLabel = tap.view as? UILabel else {return}
@@ -142,9 +142,9 @@ extension XLChannelView {
         
         //6.滚动条位置发生改变
         let lineViewX = CGFloat(currentIndex) * lineView.frame.width
-        UIView.animateWithDuration(0.1) {
+        UIView.animate(withDuration: 0.1, animations: {
             self.lineView.frame.origin.x = lineViewX
-        }
+        }) 
         
         //7.实现二级联动效果,切换视图,使用代理
         delegate?.channelView(self, selectedIndex: currentIndex)
@@ -154,7 +154,7 @@ extension XLChannelView {
 
 //MARK: - 根据contentView改变channelView的方法
 extension XLChannelView {
-    func setChannelView (progress : CGFloat, sourceIndex : Int, targetIndex : Int) {
+    func setChannelView (_ progress : CGFloat, sourceIndex : Int, targetIndex : Int) {
         
         //获取label
         let sourceLabel = titleLabels[sourceIndex]

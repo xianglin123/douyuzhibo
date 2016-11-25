@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0372ED381185D10DEBC16973 /* Pods_douyuzhiboUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B289DA2C7F70B3950540D2BE /* Pods_douyuzhiboUITests.framework */; };
-		5C2D95BFBAAD71005EC6590F /* Pods_douyuzhiboTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777D219052FF959804F7034E /* Pods_douyuzhiboTests.framework */; };
 		876AFA4F6B0162D9ED9716EE /* Pods_douyuzhibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D72A05BC1A8BA352462033F /* Pods_douyuzhibo.framework */; };
 		F0010AA41DA3D41D00DF6463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AA31DA3D41D00DF6463 /* AppDelegate.swift */; };
 		F0010AA61DA3D41D00DF6463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AA51DA3D41D00DF6463 /* ViewController.swift */; };
 		F0010AA91DA3D41D00DF6463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AA71DA3D41D00DF6463 /* Main.storyboard */; };
 		F0010AAB1DA3D41D00DF6463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0010AAA1DA3D41D00DF6463 /* Assets.xcassets */; };
 		F0010AAE1DA3D41D00DF6463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AAC1DA3D41D00DF6463 /* LaunchScreen.storyboard */; };
-		F0010AB91DA3D41D00DF6463 /* douyuzhiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AB81DA3D41D00DF6463 /* douyuzhiboTests.swift */; };
-		F0010AC41DA3D41D00DF6463 /* douyuzhiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AC31DA3D41D00DF6463 /* douyuzhiboUITests.swift */; };
 		F0010AE91DA3DC0100DF6463 /* XLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AE81DA3DC0100DF6463 /* XLTabBarController.swift */; };
 		F0010AEC1DA3DEC500DF6463 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AEA1DA3DEC500DF6463 /* Home.storyboard */; };
 		F0010AEE1DA3DEDC00DF6463 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0010AED1DA3DEDC00DF6463 /* Live.storyboard */; };
@@ -28,6 +24,9 @@
 		F0010AFC1DA407D100DF6463 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010AFB1DA407D100DF6463 /* common.swift */; };
 		F08770FF1DA4C99300D0139E /* XLContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08770FE1DA4C99300D0139E /* XLContentView.swift */; };
 		F08771011DA4D32100D0139E /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08771001DA4D32100D0139E /* UIColor+Ext.swift */; };
+		F0F6CCB81DE8207600F82C55 /* XLRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CCB71DE8207600F82C55 /* XLRecommendController.swift */; };
+		F0F7D7761DE7E6BF00B74C36 /* XLRecommendVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7D7751DE7E6BF00B74C36 /* XLRecommendVM.swift */; };
+		F0F7D7781DE80C9700B74C36 /* XLNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7D7771DE80C9700B74C36 /* XLNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		341F5D7CCC20C782A7F976B9 /* Pods-douyuzhiboUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboUITests/Pods-douyuzhiboUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D72A05BC1A8BA352462033F /* Pods_douyuzhibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douyuzhibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAD2053D655A5219A941791 /* Pods-douyuzhibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhibo/Pods-douyuzhibo.debug.xcconfig"; sourceTree = "<group>"; };
 		777D219052FF959804F7034E /* Pods_douyuzhiboTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douyuzhiboTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB0A47FE2789C1746D4AF986 /* Pods-douyuzhiboTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboTests/Pods-douyuzhiboTests.release.xcconfig"; sourceTree = "<group>"; };
 		B289DA2C7F70B3950540D2BE /* Pods_douyuzhiboUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douyuzhiboUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6ED00E3B5F903317B0D7DFE /* Pods-douyuzhibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhibo/Pods-douyuzhibo.release.xcconfig"; sourceTree = "<group>"; };
 		F0010AA01DA3D41D00DF6463 /* douyuzhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyuzhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,11 +60,7 @@
 		F0010AAD1DA3D41D00DF6463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0010AAF1DA3D41D00DF6463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0010AB41DA3D41D00DF6463 /* douyuzhiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = douyuzhiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0010AB81DA3D41D00DF6463 /* douyuzhiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyuzhiboTests.swift; sourceTree = "<group>"; };
-		F0010ABA1DA3D41D00DF6463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0010ABF1DA3D41D00DF6463 /* douyuzhiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = douyuzhiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0010AC31DA3D41D00DF6463 /* douyuzhiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyuzhiboUITests.swift; sourceTree = "<group>"; };
-		F0010AC51DA3D41D00DF6463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0010AE81DA3DC0100DF6463 /* XLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLTabBarController.swift; sourceTree = "<group>"; };
 		F0010AEB1DA3DEC500DF6463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyuzhibo/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		F0010AED1DA3DEDC00DF6463 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../../Common/Controllers/Live.storyboard; sourceTree = "<group>"; };
@@ -79,8 +72,9 @@
 		F0010AFB1DA407D100DF6463 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		F08770FE1DA4C99300D0139E /* XLContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLContentView.swift; sourceTree = "<group>"; };
 		F08771001DA4D32100D0139E /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
-		F426821A80820030ECD8A089 /* Pods-douyuzhiboUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboUITests/Pods-douyuzhiboUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F8905C3FF75F0911D09535AF /* Pods-douyuzhiboTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuzhiboTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyuzhiboTests/Pods-douyuzhiboTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0F6CCB71DE8207600F82C55 /* XLRecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLRecommendController.swift; sourceTree = "<group>"; };
+		F0F7D7751DE7E6BF00B74C36 /* XLRecommendVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLRecommendVM.swift; sourceTree = "<group>"; };
+		F0F7D7771DE80C9700B74C36 /* XLNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2D95BFBAAD71005EC6590F /* Pods_douyuzhiboTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0372ED381185D10DEBC16973 /* Pods_douyuzhiboUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,10 +108,6 @@
 			children = (
 				5DAD2053D655A5219A941791 /* Pods-douyuzhibo.debug.xcconfig */,
 				C6ED00E3B5F903317B0D7DFE /* Pods-douyuzhibo.release.xcconfig */,
-				F8905C3FF75F0911D09535AF /* Pods-douyuzhiboTests.debug.xcconfig */,
-				AB0A47FE2789C1746D4AF986 /* Pods-douyuzhiboTests.release.xcconfig */,
-				341F5D7CCC20C782A7F976B9 /* Pods-douyuzhiboUITests.debug.xcconfig */,
-				F426821A80820030ECD8A089 /* Pods-douyuzhiboUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -138,8 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				F0010AA21DA3D41D00DF6463 /* douyuzhibo */,
-				F0010AB71DA3D41D00DF6463 /* douyuzhiboTests */,
-				F0010AC21DA3D41D00DF6463 /* douyuzhiboUITests */,
 				F0010AA11DA3D41D00DF6463 /* Products */,
 				3F115F0AE1BE6428CFB04570 /* Pods */,
 				80FD083170914A1BAA52EC3E /* Frameworks */,
@@ -167,24 +153,6 @@
 				F0010AAF1DA3D41D00DF6463 /* Info.plist */,
 			);
 			path = douyuzhibo;
-			sourceTree = "<group>";
-		};
-		F0010AB71DA3D41D00DF6463 /* douyuzhiboTests */ = {
-			isa = PBXGroup;
-			children = (
-				F0010AB81DA3D41D00DF6463 /* douyuzhiboTests.swift */,
-				F0010ABA1DA3D41D00DF6463 /* Info.plist */,
-			);
-			path = douyuzhiboTests;
-			sourceTree = "<group>";
-		};
-		F0010AC21DA3D41D00DF6463 /* douyuzhiboUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F0010AC31DA3D41D00DF6463 /* douyuzhiboUITests.swift */,
-				F0010AC51DA3D41D00DF6463 /* Info.plist */,
-			);
-			path = douyuzhiboUITests;
 			sourceTree = "<group>";
 		};
 		F0010AD11DA3D5FC00DF6463 /* Classes */ = {
@@ -270,9 +238,10 @@
 		F0010ADA1DA3D5FC00DF6463 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F0F7D7721DE7E6A100B74C36 /* Model */,
+				F0F7D7731DE7E6A100B74C36 /* View */,
+				F0F7D7741DE7E6A100B74C36 /* ViewModel */,
 				F0010ADB1DA3D5FC00DF6463 /* Controllers */,
-				F0010ADC1DA3D5FC00DF6463 /* Models */,
-				F0010ADD1DA3D5FC00DF6463 /* Views */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -282,22 +251,9 @@
 			children = (
 				F0010AEA1DA3DEC500DF6463 /* Home.storyboard */,
 				F0010AF41DA3E58B00DF6463 /* XLHomeViewController.swift */,
+				F0F6CCB71DE8207600F82C55 /* XLRecommendController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F0010ADC1DA3D5FC00DF6463 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F0010ADD1DA3D5FC00DF6463 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		F0010ADE1DA3D5FC00DF6463 /* Live */ = {
@@ -370,8 +326,31 @@
 				F0010AF71DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift */,
 				F0010AFB1DA407D100DF6463 /* common.swift */,
 				F08771001DA4D32100D0139E /* UIColor+Ext.swift */,
+				F0F7D7771DE80C9700B74C36 /* XLNetworkManager.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		F0F7D7721DE7E6A100B74C36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0F7D7731DE7E6A100B74C36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0F7D7741DE7E6A100B74C36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0F7D7751DE7E6BF00B74C36 /* XLRecommendVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,12 +380,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0010ACB1DA3D41D00DF6463 /* Build configuration list for PBXNativeTarget "douyuzhiboTests" */;
 			buildPhases = (
-				8D8EF2780936D9FC248FB6C7 /* [CP] Check Pods Manifest.lock */,
 				F0010AB01DA3D41D00DF6463 /* Sources */,
 				F0010AB11DA3D41D00DF6463 /* Frameworks */,
 				F0010AB21DA3D41D00DF6463 /* Resources */,
-				7D5FBA6C24857C56C6492207 /* [CP] Embed Pods Frameworks */,
-				2E1A37C211266103390CCC0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -422,11 +398,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0010ACE1DA3D41D00DF6463 /* Build configuration list for PBXNativeTarget "douyuzhiboUITests" */;
 			buildPhases = (
-				76E07762669A6337CC2AC477 /* [CP] Check Pods Manifest.lock */,
 				F0010ABB1DA3D41D00DF6463 /* Sources */,
 				F0010ABC1DA3D41D00DF6463 /* Frameworks */,
 				F0010ABD1DA3D41D00DF6463 /* Resources */,
-				440B05DDCB5A95B22F8E8917 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,13 +425,17 @@
 				TargetAttributes = {
 					F0010A9F1DA3D41D00DF6463 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = X52UY93425;
+						LastSwiftMigration = 0800;
 					};
 					F0010AB31DA3D41D00DF6463 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = F0010A9F1DA3D41D00DF6463;
 					};
 					F0010ABE1DA3D41D00DF6463 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = F0010A9F1DA3D41D00DF6463;
 					};
 				};
@@ -544,81 +522,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyuzhibo/Pods-douyuzhibo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2E1A37C211266103390CCC0C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyuzhiboTests/Pods-douyuzhiboTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		440B05DDCB5A95B22F8E8917 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyuzhiboUITests/Pods-douyuzhiboUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76E07762669A6337CC2AC477 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7D5FBA6C24857C56C6492207 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyuzhiboTests/Pods-douyuzhiboTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D8EF2780936D9FC248FB6C7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		C8DAFB9960B092143C5BC765 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,7 +534,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -644,9 +547,12 @@
 				F08770FF1DA4C99300D0139E /* XLContentView.swift in Sources */,
 				F0010AFC1DA407D100DF6463 /* common.swift in Sources */,
 				F0010AA61DA3D41D00DF6463 /* ViewController.swift in Sources */,
+				F0F7D7781DE80C9700B74C36 /* XLNetworkManager.swift in Sources */,
 				F0010AF51DA3E58B00DF6463 /* XLHomeViewController.swift in Sources */,
 				F0010AA41DA3D41D00DF6463 /* AppDelegate.swift in Sources */,
+				F0F7D7761DE7E6BF00B74C36 /* XLRecommendVM.swift in Sources */,
 				F0010AF81DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift in Sources */,
+				F0F6CCB81DE8207600F82C55 /* XLRecommendController.swift in Sources */,
 				F08771011DA4D32100D0139E /* UIColor+Ext.swift in Sources */,
 				F0010AFA1DA3FC4200DF6463 /* XLChannelView.swift in Sources */,
 				F0010AE91DA3DC0100DF6463 /* XLTabBarController.swift in Sources */,
@@ -657,7 +563,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0010AB91DA3D41D00DF6463 /* douyuzhiboTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +570,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0010AC41DA3D41D00DF6463 /* douyuzhiboUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,11 +714,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = X52UY93425;
 				INFOPLIST_FILE = douyuzhibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xianglin.douyuzhibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -824,48 +730,50 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = X52UY93425;
 				INFOPLIST_FILE = douyuzhibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xianglin.douyuzhibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		F0010ACC1DA3D41D00DF6463 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8905C3FF75F0911D09535AF /* Pods-douyuzhiboTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = douyuzhiboTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xianglin.douyuzhiboTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/douyuzhibo.app/douyuzhibo";
 			};
 			name = Debug;
 		};
 		F0010ACD1DA3D41D00DF6463 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB0A47FE2789C1746D4AF986 /* Pods-douyuzhiboTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = douyuzhiboTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xianglin.douyuzhiboTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/douyuzhibo.app/douyuzhibo";
 			};
 			name = Release;
 		};
 		F0010ACF1DA3D41D00DF6463 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 341F5D7CCC20C782A7F976B9 /* Pods-douyuzhiboUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = douyuzhiboUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xianglin.douyuzhiboUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = douyuzhibo;
 				USES_XCTRUNNER = YES;
 			};
@@ -873,12 +781,12 @@
 		};
 		F0010AD01DA3D41D00DF6463 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F426821A80820030ECD8A089 /* Pods-douyuzhiboUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = douyuzhiboUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xianglin.douyuzhiboUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = douyuzhibo;
 				USES_XCTRUNNER = YES;
 			};

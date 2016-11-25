@@ -21,7 +21,7 @@ class XLTabBarController: UITabBarController {
 
     }
 
-    private func addChildVC(storyboardName : String) {
+    fileprivate func addChildVC(_ storyboardName : String) {
         
         let childVc = UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()
         

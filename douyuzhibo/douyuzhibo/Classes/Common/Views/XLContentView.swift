@@ -9,16 +9,16 @@
 import UIKit
 
 protocol XLContentViewDelegate : class {
-    func contentView(contentView : XLContentView, progress : CGFloat, sourceIndex : Int, targetIndex : Int)
+    func contentView(_ contentView : XLContentView, progress : CGFloat, sourceIndex : Int, targetIndex : Int)
 }
 
 private let kContentViewCell = "kContentViewCell"
 class XLContentView: UIView {
-    private var childVcs: [UIViewController]
-    private var parentController: UIViewController?
-    private var startOffsetX : CGFloat = 0
+    fileprivate var childVcs: [UIViewController]
+    fileprivate var parentController: UIViewController?
+    fileprivate var startOffsetX : CGFloat = 0
     weak var delegate: XLContentViewDelegate?
-    private var isForbidDelegate : Bool = false
+    fileprivate var isForbidDelegate : Bool = false
     
     //MARK: - 自定义构造函数,根据不同控制器初始化
     init(frame: CGRect , childVcs: [UIViewController] , parentController: UIViewController?) {
@@ -35,7 +35,7 @@ class XLContentView: UIView {
     }
     
     //MARK: - 设置UI
-    private func setupUI() {
+    fileprivate func setupUI() {
         // 1.将所有的子控制器添加父控制器中
         for childVc in childVcs{
             parentController?.addChildViewController(childVc)
@@ -47,25 +47,25 @@ class XLContentView: UIView {
     }
     
     //MARK: - 懒加载控件
-    private lazy var collectionView : UICollectionView = {[weak self] in
+    fileprivate lazy var collectionView : UICollectionView = {[weak self] in
         //1.创建布局,设置布局
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = self!.bounds.size
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
-        layout.scrollDirection = .Horizontal
+        layout.scrollDirection = .horizontal
         
         //2.创建collectionView,设置
-        let collectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.bounces = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.scrollsToTop = false
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.pagingEnabled = true
+        collectionView.isPagingEnabled = true
         
         //3.注册cell
-        collectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: kContentViewCell)
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kContentViewCell)
         
         return collectionView
     }()
@@ -73,13 +73,13 @@ class XLContentView: UIView {
 
 //MARK: - collectionView的数据源和代理方法
 extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childVcs.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //1.创建cell
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kContentViewCell, forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kContentViewCell, for: indexPath)
         
         // 2.给Cell设置内容
         for view in cell.contentView.subviews {
@@ -87,19 +87,19 @@ extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
         }
         
         //3.添加控制器的view到cell
-        let childVc = childVcs[indexPath.item]
+        let childVc = childVcs[(indexPath as NSIndexPath).item]
         childVc.view.frame = cell.contentView.bounds
         cell.contentView.addSubview(childVc.view)
         
         return cell
     }
     
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         isForbidDelegate = false
         startOffsetX = scrollView.contentOffset.x
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if isForbidDelegate { return }
         //定义属性
@@ -112,7 +112,7 @@ extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
         let scrollViewW = scrollView.bounds.width
         if startOffsetX < currentOffsetX {//左滑
             //1.计算当前页的滚动进度
-            scrollProgress = currentOffsetX % scrollViewW / scrollViewW
+            scrollProgress = currentOffsetX.truncatingRemainder(dividingBy: scrollViewW) / scrollViewW
             //2.计算sourceIndex
             sourceIndex = Int(currentOffsetX / scrollViewW)
             //3.计算targetIndex
@@ -127,7 +127,7 @@ extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
             }
         }else {//右滑
             //1.计算当前页的滚动进度
-            scrollProgress = 1 - currentOffsetX % scrollViewW / scrollViewW
+            scrollProgress = 1 - currentOffsetX.truncatingRemainder(dividingBy: scrollViewW) / scrollViewW
             //2.计算targetIndex
             targetIndex = Int(currentOffsetX / scrollViewW)
             //3.计算sourceIndex
@@ -144,7 +144,7 @@ extension XLContentView : UICollectionViewDataSource,UICollectionViewDelegate {
 
 // MARK:- 对外暴露的方法
 extension XLContentView {
-    func setContentViewWithIndex(currentIndex : Int) {
+    func setContentViewWithIndex(_ currentIndex : Int) {
         
         // 1.是否禁止执行代理方法
         isForbidDelegate = true
