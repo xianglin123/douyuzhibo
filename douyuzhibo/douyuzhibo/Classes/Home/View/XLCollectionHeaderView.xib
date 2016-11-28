@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kHeaderViewID" id="U6b-Vx-4bR" customClass="XLCollectionHeaderView" customModule="douyuzhibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NOW-wc-ZDl">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="dvM-nt-aGG"/>
+                        <constraint firstAttribute="height" constant="20" id="ibl-is-zc6"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-mh-9le">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="更多&gt;">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVd-AT-go7">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="yYF-yA-8Rt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="UVd-AT-go7" firstAttribute="centerY" secondItem="NOW-wc-ZDl" secondAttribute="centerY" id="Fts-sS-cGs"/>
+                <constraint firstItem="UVd-AT-go7" firstAttribute="leading" secondItem="NOW-wc-ZDl" secondAttribute="trailing" constant="5" id="GYJ-Fq-xfl"/>
+                <constraint firstItem="Uby-mh-9le" firstAttribute="centerY" secondItem="UVd-AT-go7" secondAttribute="centerY" id="KTB-wn-89n"/>
+                <constraint firstAttribute="trailing" secondItem="Uby-mh-9le" secondAttribute="trailing" constant="5" id="neR-V2-mGS"/>
+                <constraint firstItem="NOW-wc-ZDl" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="ppl-UB-Mhi"/>
+                <constraint firstItem="NOW-wc-ZDl" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="5" id="yeE-gG-arG"/>
+            </constraints>
+            <connections>
+                <outlet property="headerName" destination="UVd-AT-go7" id="71x-4j-65W"/>
+                <outlet property="iconImageView" destination="NOW-wc-ZDl" id="wPL-18-RPa"/>
+                <outlet property="moreButton" destination="Uby-mh-9le" id="3tl-H2-1xm"/>
+            </connections>
+            <point key="canvasLocation" x="-79" y="43"/>
+        </collectionReusableView>
+    </objects>
+</document>

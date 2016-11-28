@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="XLRecommendNormalCell" customModule="douyuzhibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="poq-aU-Y9s">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="XQV-fV-yis"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="8Aj-M4-RYc">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="HqG-ja-s5X"/>
+                            <constraint firstAttribute="width" constant="20" id="ccQ-DX-3nO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="斗鱼直播视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5R-M9-axS">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oS-AR-Xa6">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xls-uC-RbE">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Button" image="Image_online"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8Aj-M4-RYc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="0YK-ef-lDV"/>
+                <constraint firstItem="C5R-M9-axS" firstAttribute="leading" secondItem="8Aj-M4-RYc" secondAttribute="trailing" constant="5" id="320-d8-AUA"/>
+                <constraint firstItem="6oS-AR-Xa6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="3IH-bj-Kxj"/>
+                <constraint firstItem="poq-aU-Y9s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4PJ-Ur-fLO"/>
+                <constraint firstAttribute="trailing" secondItem="C5R-M9-axS" secondAttribute="trailing" constant="5" id="DS8-o9-F4v"/>
+                <constraint firstAttribute="trailing" secondItem="poq-aU-Y9s" secondAttribute="trailing" id="EPQ-tC-DL2"/>
+                <constraint firstItem="8Aj-M4-RYc" firstAttribute="top" secondItem="poq-aU-Y9s" secondAttribute="bottom" constant="5" id="J06-5h-5hp"/>
+                <constraint firstItem="C5R-M9-axS" firstAttribute="top" secondItem="xls-uC-RbE" secondAttribute="bottom" constant="10" id="NEf-1i-Dhq"/>
+                <constraint firstItem="8Aj-M4-RYc" firstAttribute="top" secondItem="6oS-AR-Xa6" secondAttribute="bottom" constant="8" id="TKR-rV-eox"/>
+                <constraint firstAttribute="trailing" secondItem="xls-uC-RbE" secondAttribute="trailing" id="VRw-pf-08Y"/>
+                <constraint firstItem="poq-aU-Y9s" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fIl-sm-91y"/>
+                <constraint firstItem="C5R-M9-axS" firstAttribute="centerY" secondItem="8Aj-M4-RYc" secondAttribute="centerY" id="vao-v8-dZ5"/>
+            </constraints>
+            <size key="customSize" width="210" height="134"/>
+            <connections>
+                <outlet property="anchorImage" destination="poq-aU-Y9s" id="TpL-Y0-1Y6"/>
+                <outlet property="anchorName" destination="6oS-AR-Xa6" id="51q-dD-0Iz"/>
+                <outlet property="onlineButton" destination="xls-uC-RbE" id="Z8a-nS-xYX"/>
+                <outlet property="roomName" destination="C5R-M9-axS" id="dD5-Kp-nq7"/>
+            </connections>
+            <point key="canvasLocation" x="105" y="94"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+    </resources>
+</document>
