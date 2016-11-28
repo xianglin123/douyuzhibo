@@ -10,5 +10,6 @@ import UIKit
 
 class XLBaseViewModel {
 
-    
+    // 所有主播数组
+    var anchorModels : [XLAnchorGroup] = [XLAnchorGroup]()
 }

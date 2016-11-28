@@ -27,10 +27,4 @@ class XLPrettyCollectionCell: UICollectionViewCell {
             loactionBtn.setTitle(anchorModel.anchor_city, for: .normal)
         }
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
 }

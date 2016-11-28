@@ -8,10 +8,9 @@
 
 import UIKit
 
-class XLRecommendVM: NSObject {
+class XLRecommendVM: XLBaseViewModel {
     
-    // 所有主播数组
-    var anchorModels : [XLAnchorGroup] = [XLAnchorGroup]()
+    
     // 普通主播数组
     fileprivate lazy var normalGroup : XLAnchorGroup = XLAnchorGroup()
     // 颜值主播数组

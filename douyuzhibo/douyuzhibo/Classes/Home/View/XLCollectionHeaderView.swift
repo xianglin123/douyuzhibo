@@ -16,11 +16,8 @@ class XLCollectionHeaderView: UICollectionReusableView {
     
     var anchorGroup : XLAnchorGroup? {
         didSet{
-            guard let anchorGroup = anchorGroup else { return }
-            guard let url = URL(string: anchorGroup.icon_url) else { return }
-            iconImageView.kf.setImage(with: url)
-            
-            headerName.text = anchorGroup.tag_name
+            iconImageView.image = UIImage(named: anchorGroup?.icon_name ?? "home_header_normal")
+            headerName.text = anchorGroup?.tag_name
         }
     }
     
