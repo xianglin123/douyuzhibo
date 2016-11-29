@@ -37,6 +37,16 @@
 		F0F6CD0A1DEC396200F82C55 /* XLBaseAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD091DEC396200F82C55 /* XLBaseAnchorModel.swift */; };
 		F0F6CD0C1DEC3AB200F82C55 /* XLBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD0B1DEC3AB200F82C55 /* XLBaseViewModel.swift */; };
 		F0F6CD0E1DEC3B0E00F82C55 /* XLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD0D1DEC3B0E00F82C55 /* XLBaseViewController.swift */; };
+		F0F6CD101DED1B9600F82C55 /* XLGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD0F1DED1B9600F82C55 /* XLGameViewController.swift */; };
+		F0F6CD121DED1D4500F82C55 /* XLCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD111DED1D4500F82C55 /* XLCycleModel.swift */; };
+		F0F6CD141DED214A00F82C55 /* XLCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD131DED214A00F82C55 /* XLCycleView.swift */; };
+		F0F6CD161DED215400F82C55 /* XLCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F6CD151DED215400F82C55 /* XLCycleView.xib */; };
+		F0F6CD191DED5C9B00F82C55 /* XLCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD171DED5C9B00F82C55 /* XLCycleViewCell.swift */; };
+		F0F6CD1A1DED5C9B00F82C55 /* XLCycleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F6CD181DED5C9B00F82C55 /* XLCycleViewCell.xib */; };
+		F0F6CD1D1DED7E3F00F82C55 /* XLGameCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD1B1DED7E3F00F82C55 /* XLGameCollectionCell.swift */; };
+		F0F6CD1E1DED7E3F00F82C55 /* XLGameCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F6CD1C1DED7E3F00F82C55 /* XLGameCollectionCell.xib */; };
+		F0F6CD201DED7E8D00F82C55 /* XLGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD1F1DED7E8D00F82C55 /* XLGameViewModel.swift */; };
+		F0F6CD221DED7EE400F82C55 /* XLGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6CD211DED7EE400F82C55 /* XLGameModel.swift */; };
 		F0F7D7761DE7E6BF00B74C36 /* XLRecommendVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7D7751DE7E6BF00B74C36 /* XLRecommendVM.swift */; };
 		F0F7D7781DE80C9700B74C36 /* XLNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F7D7771DE80C9700B74C36 /* XLNetworkManager.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +88,16 @@
 		F0F6CD091DEC396200F82C55 /* XLBaseAnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLBaseAnchorModel.swift; sourceTree = "<group>"; };
 		F0F6CD0B1DEC3AB200F82C55 /* XLBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLBaseViewModel.swift; sourceTree = "<group>"; };
 		F0F6CD0D1DEC3B0E00F82C55 /* XLBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLBaseViewController.swift; sourceTree = "<group>"; };
+		F0F6CD0F1DED1B9600F82C55 /* XLGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLGameViewController.swift; sourceTree = "<group>"; };
+		F0F6CD111DED1D4500F82C55 /* XLCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLCycleModel.swift; sourceTree = "<group>"; };
+		F0F6CD131DED214A00F82C55 /* XLCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLCycleView.swift; sourceTree = "<group>"; };
+		F0F6CD151DED215400F82C55 /* XLCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLCycleView.xib; sourceTree = "<group>"; };
+		F0F6CD171DED5C9B00F82C55 /* XLCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLCycleViewCell.swift; sourceTree = "<group>"; };
+		F0F6CD181DED5C9B00F82C55 /* XLCycleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLCycleViewCell.xib; sourceTree = "<group>"; };
+		F0F6CD1B1DED7E3F00F82C55 /* XLGameCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLGameCollectionCell.swift; sourceTree = "<group>"; };
+		F0F6CD1C1DED7E3F00F82C55 /* XLGameCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLGameCollectionCell.xib; sourceTree = "<group>"; };
+		F0F6CD1F1DED7E8D00F82C55 /* XLGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLGameViewModel.swift; sourceTree = "<group>"; };
+		F0F6CD211DED7EE400F82C55 /* XLGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLGameModel.swift; sourceTree = "<group>"; };
 		F0F7D7751DE7E6BF00B74C36 /* XLRecommendVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLRecommendVM.swift; sourceTree = "<group>"; };
 		F0F7D7771DE80C9700B74C36 /* XLNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +261,7 @@
 				F0010AEA1DA3DEC500DF6463 /* Home.storyboard */,
 				F0010AF41DA3E58B00DF6463 /* XLHomeViewController.swift */,
 				F0F6CCB71DE8207600F82C55 /* XLRecommendController.swift */,
+				F0F6CD0F1DED1B9600F82C55 /* XLGameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -341,6 +362,8 @@
 			children = (
 				F0F6CCBF1DEBD49200F82C55 /* XLAnchorModel.swift */,
 				F0F6CCFB1DEC07EC00F82C55 /* XLAnchorGroup.swift */,
+				F0F6CD111DED1D4500F82C55 /* XLCycleModel.swift */,
+				F0F6CD211DED7EE400F82C55 /* XLGameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -350,6 +373,12 @@
 			children = (
 				F0F6CD011DEC1C8900F82C55 /* XLCollectionHeaderView.swift */,
 				F0F6CD021DEC1C8900F82C55 /* XLCollectionHeaderView.xib */,
+				F0F6CD131DED214A00F82C55 /* XLCycleView.swift */,
+				F0F6CD151DED215400F82C55 /* XLCycleView.xib */,
+				F0F6CD171DED5C9B00F82C55 /* XLCycleViewCell.swift */,
+				F0F6CD181DED5C9B00F82C55 /* XLCycleViewCell.xib */,
+				F0F6CD1B1DED7E3F00F82C55 /* XLGameCollectionCell.swift */,
+				F0F6CD1C1DED7E3F00F82C55 /* XLGameCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -358,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				F0F7D7751DE7E6BF00B74C36 /* XLRecommendVM.swift */,
+				F0F6CD1F1DED7E8D00F82C55 /* XLGameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -429,8 +459,11 @@
 				F0010AAE1DA3D41D00DF6463 /* LaunchScreen.storyboard in Resources */,
 				F0F6CCBE1DEBCAFB00F82C55 /* XLRecommendNormalCell.xib in Resources */,
 				F0010AAB1DA3D41D00DF6463 /* Assets.xcassets in Resources */,
+				F0F6CD1A1DED5C9B00F82C55 /* XLCycleViewCell.xib in Resources */,
+				F0F6CD161DED215400F82C55 /* XLCycleView.xib in Resources */,
 				F0010AA91DA3D41D00DF6463 /* Main.storyboard in Resources */,
 				F0010AF01DA3DFF400DF6463 /* Focus.storyboard in Resources */,
+				F0F6CD1E1DED7E3F00F82C55 /* XLGameCollectionCell.xib in Resources */,
 				F0010AF31DA3E00400DF6463 /* Myself.storyboard in Resources */,
 				F0010AEE1DA3DEDC00DF6463 /* Live.storyboard in Resources */,
 				F0F6CD081DEC246300F82C55 /* XLPrettyCollectionCell.xib in Resources */,
@@ -497,9 +530,12 @@
 				F0F6CCFC1DEC07EC00F82C55 /* XLAnchorGroup.swift in Sources */,
 				F0F6CD031DEC1C8900F82C55 /* XLCollectionHeaderView.swift in Sources */,
 				F08770FF1DA4C99300D0139E /* XLContentView.swift in Sources */,
+				F0F6CD221DED7EE400F82C55 /* XLGameModel.swift in Sources */,
+				F0F6CD141DED214A00F82C55 /* XLCycleView.swift in Sources */,
 				F0010AFC1DA407D100DF6463 /* common.swift in Sources */,
 				F0F6CCC01DEBD49200F82C55 /* XLAnchorModel.swift in Sources */,
 				F0010AA61DA3D41D00DF6463 /* ViewController.swift in Sources */,
+				F0F6CD101DED1B9600F82C55 /* XLGameViewController.swift in Sources */,
 				F0F6CCBD1DEBCAFB00F82C55 /* XLRecommendNormalCell.swift in Sources */,
 				F0F6CD0E1DEC3B0E00F82C55 /* XLBaseViewController.swift in Sources */,
 				F0F7D7781DE80C9700B74C36 /* XLNetworkManager.swift in Sources */,
@@ -507,13 +543,17 @@
 				F0010AA41DA3D41D00DF6463 /* AppDelegate.swift in Sources */,
 				F0F6CD0A1DEC396200F82C55 /* XLBaseAnchorModel.swift in Sources */,
 				F0F7D7761DE7E6BF00B74C36 /* XLRecommendVM.swift in Sources */,
+				F0F6CD1D1DED7E3F00F82C55 /* XLGameCollectionCell.swift in Sources */,
 				F0010AF81DA3EF8600DF6463 /* UIBarButtonItem+Ext.swift in Sources */,
 				F0F6CCB81DE8207600F82C55 /* XLRecommendController.swift in Sources */,
+				F0F6CD201DED7E8D00F82C55 /* XLGameViewModel.swift in Sources */,
 				F08771011DA4D32100D0139E /* UIColor+Ext.swift in Sources */,
 				F0F6CD0C1DEC3AB200F82C55 /* XLBaseViewModel.swift in Sources */,
 				F0010AFA1DA3FC4200DF6463 /* XLChannelView.swift in Sources */,
 				F0F6CD071DEC246300F82C55 /* XLPrettyCollectionCell.swift in Sources */,
 				F0010AE91DA3DC0100DF6463 /* XLTabBarController.swift in Sources */,
+				F0F6CD191DED5C9B00F82C55 /* XLCycleViewCell.swift in Sources */,
+				F0F6CD121DED1D4500F82C55 /* XLCycleModel.swift in Sources */,
 				F0F6CD001DEC13F800F82C55 /* XLCollectionViewBaseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

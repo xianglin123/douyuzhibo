@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XLCycleView" customModule="douyuzhibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="X6b-Ug-FOM">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="06b-wy-oNf">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="T4N-pv-WaG"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="6hv-GR-PIe"/>
+                    </connections>
+                </collectionView>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoW-zq-bMX">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wry-NO-96a"/>
+                    </constraints>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="RuD-9g-hQL">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Je0-QH-j1K"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="X6b-Ug-FOM" secondAttribute="bottom" id="E51-fu-isK"/>
+                <constraint firstAttribute="bottom" secondItem="EoW-zq-bMX" secondAttribute="bottom" id="O7T-EO-fqB"/>
+                <constraint firstAttribute="bottom" secondItem="RuD-9g-hQL" secondAttribute="bottom" id="Pon-vL-GgE"/>
+                <constraint firstItem="EoW-zq-bMX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rie-II-dRt"/>
+                <constraint firstItem="X6b-Ug-FOM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="S8L-NJ-UaY"/>
+                <constraint firstAttribute="trailing" secondItem="RuD-9g-hQL" secondAttribute="trailing" constant="10" id="ToF-gG-J14"/>
+                <constraint firstItem="X6b-Ug-FOM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dDn-r3-65B"/>
+                <constraint firstAttribute="trailing" secondItem="EoW-zq-bMX" secondAttribute="trailing" id="g9d-3z-Gqc"/>
+                <constraint firstAttribute="trailing" secondItem="X6b-Ug-FOM" secondAttribute="trailing" id="rPn-QD-4NF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cycleConnectionView" destination="X6b-Ug-FOM" id="S8F-hh-2u0"/>
+                <outlet property="pageControl" destination="RuD-9g-hQL" id="uBh-NL-zN5"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="-32"/>
+        </view>
+    </objects>
+</document>

@@ -8,32 +8,38 @@
 
 import UIKit
 
-private let kItemMargin : CGFloat = 10
-private let kHeaderViewH : CGFloat = 50
-
-private let kNormalCellID = "kNormalCellID"
-private let kHeaderViewID = "kHeaderViewID"
-
+private let kCycleViewH = kScreenW * 3 / 8
+private let kGameViewH : CGFloat = 90
 
 class XLRecommendController: XLBaseViewController {
     //MARK: - 懒加载属性
-    // 1. viewModel对象 请求和处理数据
     fileprivate lazy var recommendVM : XLRecommendVM = XLRecommendVM()
+    fileprivate lazy var cycleView : XLCycleView = {
+        let cycleView = XLCycleView.cycleView()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
     
     //MARK: - 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // 添加collectionView
         view.addSubview(collectionView)
-        
+        collectionView.addSubview(cycleView)
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        // 赋值根VM
         baseViewModel = recommendVM
+        // 请求推荐数据
         recommendVM.requestData{
+            // 刷新表格
             self.collectionView.reloadData()
-            
-            
+        }
+        // 请求轮播数据
+        recommendVM.requestCycleData{
+            // 赋值模型数组
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
-
 }
 
 extension XLRecommendController : UICollectionViewDelegateFlowLayout {
@@ -51,9 +57,9 @@ extension XLRecommendController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 1 {
             return CGSize(width: kNormalItemW, height: kPrettyItemH)
-        }else{
-            return CGSize(width: kNormalItemW, height: kNormalItemH)
         }
+        
+        return CGSize(width: kNormalItemW, height: kNormalItemH)
     }
 }
 

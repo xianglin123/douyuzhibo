@@ -23,7 +23,7 @@ class XLPrettyCollectionCell: UICollectionViewCell {
             iconImageView.kf.setImage(with: url)
             // 设置名称
             nickName.text = anchorModel.nickname
-            // 再设置房间名
+            // 设置房间名
             loactionBtn.setTitle(anchorModel.anchor_city, for: .normal)
         }
     }

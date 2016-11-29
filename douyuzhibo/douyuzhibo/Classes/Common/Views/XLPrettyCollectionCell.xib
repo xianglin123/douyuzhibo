@@ -14,11 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="135" height="156"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-YR-o0v">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="100" id="sTX-ja-k6N"/>
-                        </constraints>
-                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-YR-o0v"/>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5I-EO-lvL">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -33,17 +29,14 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="m9W-Xa-aIX" firstAttribute="top" secondItem="W5I-EO-lvL" secondAttribute="bottom" id="1l3-jP-NKt"/>
-                <constraint firstAttribute="trailing" secondItem="Wbn-YR-o0v" secondAttribute="trailing" id="Hb5-7e-OUP"/>
-                <constraint firstItem="Wbn-YR-o0v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KQL-hr-6qr"/>
-                <constraint firstItem="Wbn-YR-o0v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UfZ-8I-uXt"/>
-                <constraint firstItem="m9W-Xa-aIX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uyu-SU-fcf"/>
-                <constraint firstAttribute="bottom" secondItem="m9W-Xa-aIX" secondAttribute="bottom" id="cJe-AX-x44"/>
-                <constraint firstItem="Wbn-YR-o0v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nb7-Yr-o8k"/>
-                <constraint firstAttribute="trailing" secondItem="Wbn-YR-o0v" secondAttribute="trailing" id="y5F-iT-8s1"/>
-                <constraint firstItem="Wbn-YR-o0v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yAL-yU-Rlu"/>
-                <constraint firstItem="W5I-EO-lvL" firstAttribute="top" secondItem="Wbn-YR-o0v" secondAttribute="bottom" id="zNw-YO-xsn"/>
-                <constraint firstItem="W5I-EO-lvL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zdB-Mc-r6w"/>
+                <constraint firstItem="W5I-EO-lvL" firstAttribute="top" secondItem="Wbn-YR-o0v" secondAttribute="bottom" id="2uL-cg-FXe"/>
+                <constraint firstItem="m9W-Xa-aIX" firstAttribute="top" secondItem="W5I-EO-lvL" secondAttribute="bottom" id="AuU-N9-S8k"/>
+                <constraint firstAttribute="bottom" secondItem="m9W-Xa-aIX" secondAttribute="bottom" id="FPZ-bv-Uq5"/>
+                <constraint firstItem="m9W-Xa-aIX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KOt-3A-PhZ"/>
+                <constraint firstAttribute="trailing" secondItem="Wbn-YR-o0v" secondAttribute="trailing" id="L18-fo-KMw"/>
+                <constraint firstItem="Wbn-YR-o0v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LFO-jQ-5A6"/>
+                <constraint firstItem="Wbn-YR-o0v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tV7-UN-39P"/>
+                <constraint firstItem="W5I-EO-lvL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zpH-Nt-6B5"/>
             </constraints>
             <size key="customSize" width="135" height="156"/>
             <connections>

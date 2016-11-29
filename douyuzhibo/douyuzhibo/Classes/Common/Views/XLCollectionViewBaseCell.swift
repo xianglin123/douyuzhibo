@@ -29,7 +29,7 @@ class XLCollectionViewBaseCell: UICollectionViewCell {
             // 设置在线人数
             var onlineStr = ""            
             if anchorModel.online >= 10000 {
-                onlineStr = "\(Int(anchorModel.online / 10000))/万人在线"
+                onlineStr = "\(Int(anchorModel.online / 10000))万人在线"
             }else {
                 onlineStr = "\(Int(anchorModel.online))人在线"
             }

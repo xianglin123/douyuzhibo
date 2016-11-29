@@ -15,6 +15,8 @@ class XLRecommendVM: XLBaseViewModel {
     fileprivate lazy var normalGroup : XLAnchorGroup = XLAnchorGroup()
     // 颜值主播数组
     fileprivate lazy var prettyGroup : XLAnchorGroup = XLAnchorGroup()
+    // 无线轮播数据
+    lazy var cycleModels : [XLCycleModel] = [XLCycleModel]()
 }
 
 //MARK: - 请求网络数据
@@ -92,6 +94,26 @@ extension XLRecommendVM {
             self.anchorModels.insert(self.prettyGroup, at: 0)
             self.anchorModels.insert(self.normalGroup, at: 0)
             // 5.完成回调
+            finishCallback()
+        }
+        
+        
+    }
+    //MARK: - 请求轮播数据
+    func requestCycleData(_ finishCallback : @escaping () -> ()) {
+        // 4.请求轮播数据
+        XLNetworkManager.request(.get, url: "http://www.douyutv.com/api/v1/slide/6", paramters: ["version" : "2.300"]) { (result) in
+            // 1.1 获取响应字典
+            guard let responseDict = result as? [String : NSObject] else { return }
+            
+            // 1.2 取出数组data,内部都是字典,字典转模型
+            guard let dataArray = responseDict["data"] as? [[String : NSObject]] else { return }
+            
+            // 1.3 遍历数组 字典转模型
+            for dict in dataArray {
+                self.cycleModels.append(XLCycleModel.init(dict: dict))
+            }
+            
             finishCallback()
         }
     }
